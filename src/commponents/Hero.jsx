@@ -4,10 +4,10 @@ export const Hero = () => {
       <div className="max-h-[500px] relative">
         {/* OverLay */}
         <div className="absolute w-full h-full text-gray-200 max-h-[500px] bg-black/50 flex flex-col justify-center ">
-          <h1 className="px-4 text-4xl md:text-5xl xl:text-6xl font-bold">
+          <h1 className="px-4 text-2xl md:text-5xl xl:text-6xl font-bold">
             We <span className="text-red-400">Deliver</span>
           </h1>
-          <h1 className="px-4 text-4xl md:text-5xl xl:text-6xl font-bold">
+          <h1 className="px-4 text-2xl md:text-5xl xl:text-6xl font-bold">
             <span className="text-red-400">Craving </span> Satisfaction 
           </h1>
         </div>

@@ -31,16 +31,18 @@ export const Food = () => {
   }
 
   return (
-    <div className="max-w-[1640px] m-auto px-4 py-12">
-      <h1 className="text-orange-600 font-bold text-4xl text-center">
+    <div className="max-w-[1640px] m-auto px-4 py-4 md:py-12">
+      <h1 className="text-orange-600 font-bold text-xl md:text-4xl text-center">
         Top rated menu items
       </h1>
       {/* filter row */}
-      <div className="flex flex-col xl:flex-row  justify-between">
+      <div className=" mt-2 flex flex-col xl:flex-row  justify-between">
         {/* filter type */}
         <div>
-          <p className="font-bold text-gray-700">Filter Type</p>
-          <div className="flex justify-between flex-wrap">
+          <p className="font-bold text-gray-700 text-l md:text-xl">
+            Filter Type
+          </p>
+          <div className="flex justify-between flex-wrap text-[10px] md:text-[13px]">
             <button
               onClick={() => filterType('Rice')}
               className="border-orange-600 bg-orange-600 m-1 text-white hover:bg-white duration-300 hover:text-orange-600"
@@ -75,8 +77,10 @@ export const Food = () => {
         </div>
         {/* filter price */}
         <div>
-          <p className="font-bold text-gray-700">Filter Price</p>
-          <div className="flex justify-between max-w-[590px] w-full">
+          <p className="font-bold text-gray-700 text-l md:text-xl mt-2">
+            Filter Price
+          </p>
+          <div className="flex justify-between max-w-[590px] w-full text-[10px] md:text-[13px]">
             <button
               onClick={() => filterPrice(10)}
               className="border-orange-600 bg-orange-600 m-1 text-white hover:bg-white duration-300 hover:text-orange-600"
@@ -87,7 +91,7 @@ export const Food = () => {
               onClick={() => filterPrice(20)}
               className="border-orange-600 bg-orange-600 m-1 text-white hover:bg-white duration-300 hover:text-orange-600"
             >
-                $20 and below
+              $20 and below
             </button>
             <button
               onClick={() => filterPrice(21)}
@@ -99,7 +103,7 @@ export const Food = () => {
         </div>
       </div>
       {/* Display Image */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-4">
         {foods.map((items, index) => (
           <div
             key={index}

@@ -21,7 +21,7 @@ const NavBar = () => {
         <div onClick={() => setNav(!nav)} className="cursor-pointer">
           <AiOutlineMenu size={30} />
         </div>
-        <h1 className=" Parent flex text-2xl md:text-3xl  xl:text-4xl px-2">
+        <h1 className=" Parent flex text-l md:text-3xl  xl:text-4xl px-2">
           Bioba
           <span className="flex font-bold pr-5">
             Eats <GiHotMeal className="ml-[5px]  mt-[5px]" parent={'Parent'} />
