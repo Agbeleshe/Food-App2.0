@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -9,6 +9,6 @@ button{
     @apply border border-black rounded-xl py-1 px-5
     }
  html{
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Courgette, cursive;'
  }
 }

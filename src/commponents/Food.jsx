@@ -40,7 +40,7 @@ export const Food = () => {
         {/* filter type */}
         <div>
           <p className="font-bold text-gray-700 text-l md:text-xl">
-            Filter Type
+            Select your kind of meal
           </p>
           <div className="flex justify-between flex-wrap text-[10px] md:text-[13px]">
             <button
@@ -78,7 +78,7 @@ export const Food = () => {
         {/* filter price */}
         <div>
           <p className="font-bold text-gray-700 text-l md:text-xl mt-2">
-            Filter Price
+            Whats your budget?
           </p>
           <div className="flex justify-between max-w-[590px] w-full text-[10px] md:text-[13px]">
             <button
@@ -103,7 +103,7 @@ export const Food = () => {
         </div>
       </div>
       {/* Display Image */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 pt-4">
         {foods.map((items, index) => (
           <div
             key={index}

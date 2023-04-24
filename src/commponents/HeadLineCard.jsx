@@ -5,10 +5,12 @@ export const HeadLineCard = () => {
       <div className="rounded-xl relative">
         {/* overlay */}
         <div className="absolute h-full w-full bg-black/50 rounded-xl text-white">
-          <p className="font-bold px-2 pt-4 text-xl md:text-2xl">
+          <p className="font-bold px-2 pt-3 text-2xl sm:text-3xl md:text-4xl">
             Very Delicious
           </p>
-          <p className="p-2">Local Delicacies</p>
+          <p className="p-2 text-xl sm:text-1xl md:text-2xl">
+            Local Delicacies
+          </p>
           <button
             className="border-white bg-white text-black m-2 hover:bg-black hover:text-white hover:border-black hover:transition-all duration-500 ease-in-out
            absolute bottom-0"
@@ -26,10 +28,10 @@ export const HeadLineCard = () => {
       <div className="rounded-xl relative">
         {/* overlay */}
         <div className="absolute h-full w-full bg-black/50 rounded-xl text-white">
-          <p className="font-bold px-2 pt-4 text-xl md:text-2xl">
-            We offer Catering
+          <p className="font-bold px-2 pt-3 text-2xl sm:text-3xl md:text-4xl">
+            Book Catering
           </p>
-          <p className="p-2">Services to</p>
+          <p className="p-2 text-xl sm:text-1xl md:text-2xl">Services</p>
           <button
             className="border-white bg-white text-black m-2 hover:bg-black hover:text-white hover:border-black hover:transition-all duration-500 ease-in-out
            absolute bottom-0"
@@ -47,10 +49,10 @@ export const HeadLineCard = () => {
       <div className="rounded-xl relative grid sm:col-span-2 md:col-span-1">
         {/* overlay */}
         <div className="absolute h-full w-full bg-black/50 rounded-xl text-white ">
-          <p className="font-bold px-2 pt-4 text-xl md:text-2xl">
-            Unsure of what to eat?
+          <p className="font-bold px-2 pt-3 text-2xl sm:text-3xl md:text-4xl">
+             What to eat?
           </p>
-          <p className="p-2">Try this</p>
+          <p className="p-2 text-xl sm:text-1xl md:text-2xl">Try this</p>
           <button
             className="border-white bg-white text-black m-2 hover:bg-black hover:text-white hover:border-black hover:transition-all duration-500 ease-in-out
            absolute bottom-0 "
