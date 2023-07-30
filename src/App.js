@@ -1,21 +1,31 @@
-import React from "react"
-import { Food } from "./commponents/Food"
-import { HeadLineCard } from "./commponents/HeadLineCard"
-import { Hero } from "./commponents/Hero"
-import NavBar from "./commponents/NavBar"
-import Categories from "./commponents/Categories"
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
+import { HeadLineCard } from "./commponents/HeadLineCard";
+import { Hero } from "./commponents/Hero";
+import NavBar from "./commponents/NavBar";
+import Footer from "./commponents/Footer";
+import Display from "./commponents/Display";
 
 function App() {
   return (
-    <div className="
-    ">
-    <NavBar/>
-    <Hero/>
-    <HeadLineCard/>
-    <Food/>
-    <Categories/>
-    </div>
-  )
+    <>
+      <NavBar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <HeadLineCard/>
+            </>
+          }
+        ></Route>
+        <Route path="/display" element={<Display />} />
+      </Routes>
+      <Footer />
+    </>
+  );
 }
-export default App
+
+export default App;
