@@ -6,13 +6,13 @@ import backdrop from "../assert/background/bg2.png";
 export const HeadLineCard = () => {
   // State to keep track of the selected kitchen item
   const [selectedItem, setSelectedItem] = useState(null);
-  
+
   // Function to handle when a kitchen card is clicked
   const handleSelected = (item) => {
     // Update the selectedItem state with the clicked kitchen item's details
     setSelectedItem(item);
 
-    console.log('clicked')
+    console.log("clicked");
     // Scroll down to the Display component when a card is clicked
     window.scrollTo({
       top: document.getElementById("display").offsetTop,

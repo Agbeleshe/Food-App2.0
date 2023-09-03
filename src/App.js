@@ -6,6 +6,7 @@ import { Hero } from "./commponents/Hero";
 import NavBar from "./commponents/NavBar";
 import Footer from "./commponents/Footer";
 import Display from "./commponents/Display";
+import Welcome from "./commponents/Welcome";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           element={
             <>
               <Hero />
+              <Welcome/>
               <HeadLineCard/>
             </>
           }
