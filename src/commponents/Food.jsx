@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { data } from "../data/ketchens.js";
 import FoodItems from "./FoodItems.jsx";
-import { AiOutlineSearch } from "react-icons/ai";
+
 
 export const Food = ({ selectedItem}) => {
   // State to keep track of the clicked food item (name, price, etc.)
@@ -77,15 +77,6 @@ export const Food = ({ selectedItem}) => {
       <h1 className="text-orange-600 font-bold text-xl md:text-4xl text-center">
         Top rated menu items at {selectedItem.name}
       </h1>
-      {/* Search food */}
-      <div className="flex bg-slate-300 p-1 max-w-[540px] w-auto rounded-full my-5 m-auto ">
-        <input
-          className="focus:outline-none px-1 w-full bg-transparent"
-          type="text"
-          placeholder="Search foods"
-        />
-        <AiOutlineSearch size={25} />
-      </div>
       {/* Filter and result display */}
       <div className="mt-2 flex flex-col md:flex-row justify-between">
         {/* Filter by type */}
